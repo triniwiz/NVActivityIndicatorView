@@ -481,6 +481,15 @@ public final class NVActivityIndicatorView: UIView {
         super.init(frame: frame)
         isHidden = true
     }
+    
+    
+    public init(frame: CGRect, type: NVActivityIndicatorType) {
+        self.type = type
+        self.color = NVActivityIndicatorView.DEFAULT_COLOR
+        self.padding = NVActivityIndicatorView.DEFAULT_PADDING
+        super.init(frame: frame)
+        isHidden = true
+    }
 
     // Fix issue #62
     // Intrinsic content size is used in autolayout
