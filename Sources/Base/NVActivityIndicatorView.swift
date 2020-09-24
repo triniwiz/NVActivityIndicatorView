@@ -66,7 +66,7 @@ import UIKit
  - AudioEqualizer:          AudioEqualizer animation.
  - CircleStrokeSpin:        CircleStrokeSpin animation.
  */
-public enum NVActivityIndicatorType: CaseIterable {
+@objc public enum NVActivityIndicatorType: Int, CaseIterable {
     /**
      Blank.
 
@@ -357,6 +357,8 @@ public typealias FadeOutAnimation = (UIView, @escaping () -> Void) -> Void
 
 // swiftlint:disable file_length
 /// Activity indicator view with nice animations
+
+@objcMembers
 public final class NVActivityIndicatorView: UIView {
     // swiftlint:disable identifier_name
     /// Default type. Default value is .BallSpinFadeLoader.
